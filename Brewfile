@@ -16,6 +16,7 @@ brew 'hub'
 brew 'mackup'
 brew 'mas' # Mac App Store manager
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
+brew 'terminal-notifier'
 brew 'tree' # List directories in a tree structure
 brew 'zlib' # Needed for Memcached
 
@@ -26,21 +27,21 @@ brew 'mysql'
 brew 'nginx'
 brew 'yarn'
 
-# New
-cask 'iterm2'
-cask 'nvm'
-
 # Apps
 cask 'alfred'
 cask 'atom'
+cask 'arq-cloud-backup'
 cask 'discord'
 cask 'docker'
+cask 'docker-compose'
 cask 'firefox'
 cask 'github'
 cask 'google-backup-and-sync'
 cask 'google-chrome'
 cask 'gpg-suite'
 cask 'insomnia'
+cask 'iterm2'
+cask 'nvm'
 cask 'slack'
 cask 'sourcetree'
 cask 'the-unarchiver'
@@ -48,6 +49,7 @@ cask 'transmission'
 cask 'transmit'
 cask 'vlc'
 cask 'signal'
+cask 'purevpn'
 
 # Quicklook
 cask 'qlcolorcode'
@@ -76,6 +78,7 @@ mas 'Giphy Capture', id: 668208984
 mas 'Harvest', id: 506189836
 mas 'LastPass', id: 926036361
 mas 'Skitch', id: 425955336
+mas 'Harvest', id: 506189836
 # mas 'Giphy Capture', id: 668208984
 
 # Disabled!

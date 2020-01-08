@@ -1,22 +1,40 @@
+
+☐ [turn off telemetry](https://www.reddit.com/r/privacy/comments/80d8wu/just_realised_that_visual_studio_code_sends/)
+☐ [atom and vscode Shortcuts](https://github.com/tgrrr/tldr/tree/next/dev-setup/software/shortcuts)
 ☐ [sync onetab](https://superuser.com/questions/630975/sync-onetab-tabs-on-chrome-across-different-pcs/849677)
 ☐ webdav
-☐ arc
 ☐ OneNote: https://apps.apple.com/au/app/microsoft-onenote/id784801555?mt=12
 
+oh my zsh:
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 
-Netlify:
-☐ netlify dev  `npm install netlify-cli -g`
+vlc extensions:
+  ☐ /Applications/VLC.app/Contents/MacOS/share/lua/extensions/
+    https://github.com/varlesh/VLC-Arc-Dark  
+    curl  -O /Applications/VLC.app/Contents/MacOS/share/lua/extensions/ {NewFileName} "http://thecanadiantestbox.x10.mx/CC.zip"
+
+Cleanup script:
+  ☐ yarn cache cleanup
+  ☐ node cache cleanup - checkme
+  ☐ https://github.com/tgrrr/tldr/blob/next/dev-setup/software/free-up-disk-space.md
+  ☐ check `update.sh`
+  ☐ add to readme
+
+
+☐ Netlify: netlify dev  `npm install netlify-cli -g`
 
 Update dotfiles:
-☐ App store apps
-☐ Theme etc in my zsh file
+✔ App store apps @done(20-01-08 15:54)
+✔ Theme etc in my zsh file @done(20-01-08 15:54)
+✔ arc @done(20-01-08 15:53)
 
 ☐ sync settings vscode and atom
   ☐ apm atom and extensions
-☐ Clone repo's
+☐ Clone repo's:
 
+  git fetch && pull my favourite repos here
   add to brew cask:
-  
     Github:
       https://github.com/tgrrr?tab=repositories
       ```
@@ -26,273 +44,127 @@ Update dotfiles:
       data-science
       data-science-cheatsheets
 
-TODO:
-  https://github.com/tgrrr/tldr/tree/next/dev-setup/software/config%20files
-  https://github.com/tgrrr/tldr/blob/master/dev-setup/software/dev%20software.md
-  Iterm2
-
+Consolodate other Other software lists:
+  ☐ https://github.com/tgrrr/tldr/tree/next/dev-setup/software/config%20files
+  ☐ karabiner https://github.com/tgrrr/tldr/blob/next/dev-setup/software/config%20files/karabiner.json
+  ☐ Atom https://github.com/tgrrr/tldr/blob/next/dev-setup/software/config%20files/Atom%20setup.md
+  ☐ Rstudio https://github.com/tgrrr/tldr/blob/next/dev-setup/software/R-studio-setup.md
+  ☐ Chrome plugins: https://github.com/tgrrr/tldr/blob/next/dev-setup/software/dev%20chrome%20plugins.md
+  ☐ [old dev software instructions](https://github.com/tgrrr/tldr/blob/next/dev-setup/software/dev%20software.md)
+  ☐ https://github.com/tgrrr/tldr/blob/master/dev-setup/software/dev%20software.md
+  
 Check these programs brew:
 https://github.com/tgrrr/todo/blob/master/backup-todo-PRIVATE.todo
 extract:
-
-~ brew ls
-ant			dart			gmp			libev			libxml2			openexr			python			watchman
-apr			dialog			gradle			libevent		libyaml			openjpeg		python@2		webp
-apr-util		diff-so-fancy		grunt-cli		libffi			libzip			openldap		r			wget
-asciidoc		dnsmasq			heroku			libgpg-error		little-cms2		openssl			rbenv			wpe-cli
-aspell			docbook			heroku-node		libheif			mailhog			pandoc			readline		x265
-augeas			docbook-xsl		hub			libiconv		maven			pcre			rtmpdump		xz
-autoconf		docker			icu4c			libidn			mcrypt			pcre2			ruby			yarn
-awscli			firebase-cli		ilmbase			libidn2			mhash			php70			ruby-build		zlib
-boost			freetds			imagemagick		libmetalink		mongodb			php@5.6			sass			zsh
-brotli			freetype		isl			libmpc			mpfr			php@7.0			serverless		zsh-completions
-c-ares			gcc			jansson			libomp			mysql			php@7.1			shared-mime-info
-carthage		gdbm			jemalloc		libpng			ncurses			pinentry		source-highlight
-certbot			gettext			jenv			libpq			netlifyctl		pkg-config		sphinx-doc
-cmake			ghostscript		jpeg			libssh2			nghttp2			postgresql		sqlite
-cookiecutter		git			lastpass-cli		libtiff			nginx			prince			tidy-html5
-curl			git-flow		libassuan		libtool			node			pyenv			tree
-curl-openssl		glib			libde265		libunistring		openblas		pyenv-virtualenv	unixodbc
+  graddle
+  python
+  diff-so-fancy
+  grunt-cli
+  r
+  wget
+  cookiecutter
+  git-flow
+  imagemagick
+  lastpass-cli
+  # maybe later: heroku wpe-cli firebase-cli mongodb nginx pyenv php postgresql
 
 Adobe Acrobat Reader DC
 Airflow
-Alfred 3
-Android File Transfer
 App Store
 Arduino
 ArduinoCreateAgent-1.1
-Arq
-Atom
-Automator
+
 balenaEtcher
 BeerSmith3
 BitBar
 Books
 Bot Framework Emulator
-Brother
-Calculator
-Calendar
-Chess
-Chrome Apps
-Contacts
 Cypress
 DaisyDisk
 Dash
-Dashboard
 Daum Equation Editor
-Dictionary
 Discord
-Docker
 draw.io.app
-Epic Games Launcher
-Evernote
-FaceTime
 Firefox
 Flickr Uploadr
-Font Book
 Freedom
-Google Chrome
 GraphQL IDE
 HandBrake
-Harvest
 Home
-iA Writer
 Image Capture
-iTerm
 Itsycal
-iTunes
 Joplin
 Karabiner-Elements
 Karabiner-EventViewer
 Kindle
 Kite
-LastPass
-Launchpad
-Mail
-Maps
 Mathpix Snipping Tool
-Messages
 Microsoft OneNote
-Microsoft Remote Desktop
-Mission Control
-News
-Notes
 Notion
 nteract
 OBS
 Paragon NTFS for Mac 15
-Photo Booth
-Photos
 Pomello
 Postgres
 Postman
-Preview
-QuickTime Player
 R
 Radio Silence
 RBdigital
 React Studio
-Reminders
 RescueTime
 RStudio
-Safari
 Sequel Pro
 Signal
-Siri
 Sketch
 Skitch
 Skype
-Slack
-Sourcetree
-Spectacle
 Spectacle Editor
 Spotify
 Station
 Stickies
-Stocks
 Synergy
-System Preferences
 TeamViewer
 TextEdit
 The Unarchiver
-Time Machine
 TorGuard
 Transmit
 Twitch
-Uninstall iShowU Audio Capture
-Utilities
 Vanilla
 VirtualBox
 Visual Studio Code
 VLC
-Voice Memos
 Wacom Tablet
 Xcode
 zoom.us
 
 ➜  ~ npm list -g --depth 0
 /Users/phil/.nvm/versions/node/v8.11.4/lib
-├── @shoutem/cli@0.10.9
-├── alfred-atom@2.4.0
-├── codesandbox@1.3.6
-├── cordova@5.4.1
-├── create-component-app@1.7.0
-├── create-react-native-app@2.0.2
-├── docsify-cli@4.3.0
-├── elm@0.19.0-no-deps
-├── exp@57.2.1
-├── expo-cli@3.0.8
-├── feathers-cli@2.4.0
-├── firebase-tools@6.4.0
-├── ios-deploy@1.9.4
-├── ios-sim@7.0.0
-├── jsinspect@0.12.7
-├── netlify-cli@2.11.22
-├── nodechef-cli@2.4.4
-├── npm@6.9.0
-├── npm-check@5.9.0
-├── react-proptypes-generate@1.2.1
-├── react-static@6.0.6
-├── serve@10.1.1
-├── spectacle-renderer@0.0.3
-└── yo@2.0.5
-
+├── @shoutem/cli
+├── alfred-atom
+├── codesandbox
+├── cordova
+├── create-component-app
+├── create-react-native-app
+├── docsify-cli
+├── elm
+├── exp
+├── expo-cli
+├── feathers-cli
+├── firebase-tools
+├── ios-deploy
+├── ios-sim
+├── jsinspect
+├── netlify-cli
+├── nodechef-cli
+├── npm
+├── npm-check
+├── react-proptypes-generate
+├── react-static
+├── serve
+├── spectacle-renderer
+└── yo
 
 ➜  ~ apm ls
-Built-in Atom Packages (93)
-├── atom-dark-syntax@0.29.1
-├── atom-dark-ui@0.53.3
-├── atom-light-syntax@0.29.1
-├── atom-light-ui@0.46.3
-├── base16-tomorrow-dark-theme@1.6.0
-├── base16-tomorrow-light-theme@1.6.0
-├── one-dark-ui@1.12.5
-├── one-light-ui@1.12.5
-├── one-dark-syntax@1.8.4
-├── one-light-syntax@1.8.4
-├── solarized-dark-syntax@1.3.0
-├── solarized-light-syntax@1.3.0
-├── about@1.9.1 (disabled)
-├── archive-view@0.65.1 (disabled)
-├── autocomplete-atom-api@0.10.7
-├── autocomplete-css@0.17.5
-├── autocomplete-html@0.8.8
-├── autocomplete-plus@2.42.3
-├── autocomplete-snippets@1.12.1 (disabled)
-├── autoflow@0.29.4
-├── autosave@0.24.6
-├── background-tips@0.28.0
-├── bookmarks@0.46.0 (disabled)
-├── bracket-matcher@0.91.1
-├── command-palette@0.43.5
-├── dalek@0.2.2
-├── deprecation-cop@0.56.9
-├── dev-live-reload@0.48.1
-├── encoding-selector@0.23.9
-├── exception-reporting@0.43.1
-├── find-and-replace@0.219.0
-├── fuzzy-finder@1.14.0
-├── github@0.30.0
-├── git-diff@1.3.9
-├── go-to-line@0.33.0
-├── grammar-selector@0.50.1 (disabled)
-├── image-view@0.64.0
-├── incompatible-packages@0.27.3
-├── keybinding-resolver@0.39.0 (disabled)
-├── line-ending-selector@0.7.7
-├── link@0.31.6
-├── markdown-preview@0.160.2 (disabled)
-├── metrics@1.8.1
-├── notifications@0.70.6
-├── open-on-github@1.3.1
-├── package-generator@1.3.0
-├── settings-view@0.261.3
-├── snippets@1.5.0
-├── spell-check@0.75.0
-├── status-bar@1.8.17
-├── styleguide@0.49.12
-├── symbols-view@0.118.2
-├── tabs@0.110.0
-├── timecop@0.36.2
-├── tree-view@0.228.0
-├── update-package-dependencies@0.13.1
-├── welcome@0.36.9 (disabled)
-├── whitespace@0.37.7 (disabled)
-├── wrap-guide@0.41.0
-├── language-c@0.60.18 (disabled)
-├── language-clojure@0.22.8 (disabled)
-├── language-coffee-script@0.50.0 (disabled)
-├── language-csharp@1.1.0 (disabled)
-├── language-css@0.44.0
-├── language-gfm@0.90.6
-├── language-git@0.19.1
-├── language-go@0.47.1 (disabled)
-├── language-html@0.52.3
-├── language-hyperlink@0.17.1
-├── language-java@0.31.3
-├── language-javascript@0.132.0
-├── language-json@1.0.4
-├── language-less@0.34.3
-├── language-make@0.23.0
-├── language-mustache@0.14.5
-├── language-objective-c@0.16.0
-├── language-perl@0.38.1
-├── language-php@0.44.2
-├── language-property-list@0.9.1
-├── language-python@0.53.3
-├── language-ruby@0.72.17
-├── language-ruby-on-rails@0.25.3
-├── language-rust-bundled@0.1.0
-├── language-sass@0.62.0
-├── language-shellscript@0.27.12
-├── language-source@0.9.0
-├── language-sql@0.25.10
-├── language-text@0.7.4
-├── language-todo@0.29.4
-├── language-toml@0.20.0
-├── language-typescript@0.5.2
-├── language-xml@0.35.3
-└── language-yaml@0.32.0
 
 Dev Packages (1) /Users/phil/.atom/dev/packages
 └── language-todo@0.29.4

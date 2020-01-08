@@ -29,7 +29,7 @@ If you did all of the above you may now follow these install instructions to set
 5. Clone this repo to `~/.dotfiles`
 6. Install [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh#getting-started)
 7. Update the name of your computer in `.macos`. Mine's currently called `ethel`.
-8. Run `install.sh` to start the installation
+8. Run `./install.sh` OR `sh ./install.sh` to start the installation
 9. After mackup is synced with your cloud storage, restore preferences by running `mackup restore`
 10. Restart your computer to finalize the process
 
@@ -41,6 +41,7 @@ Your Mac is now ready to use!
 
 - Apps allowed in Users & Groups. Eg. Spectacle
 - VS Code extensions with `syncing`
+- Setup Arc Backup
 
 ---
 
