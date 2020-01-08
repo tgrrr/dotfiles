@@ -7,6 +7,22 @@ export DOTFILES=$HOME/.dotfiles
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+# Paths:
+
+PATH="/usr/local/bin:$(getconf PATH)"
+export PATH=${PATH}:/usr/local/sbin:/usr/local/bin/:$PATH:/usr/local/lib/node_modules/npm/bin:/Applications/Anaconda/anaconda3/bin:/Users/phil/.local/bin
+
+# export PATH="/usr/local/sbin:$PATH"
+# Add paths for Android, Tex, Anaconda
+# export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
+# export ANDROID_HOME=/Users/phil/Library/Android/sdk
+# TODO: to use latex or android studio:
+# $ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:
+# $PATH:/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin:
+
+PYTHONPATH=/Users/phil/.pyenv/shims/python:$PYTHONPATH
+
+
 # Enable completions
 autoload -Uz compinit && compinit
 
@@ -19,7 +35,9 @@ export MNML_RPROMPT=('mnml_cwd 20')
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="minimal"
+# ZSH_THEME="minimal"
+ZSH_THEME="robbyrussell"
+
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -79,9 +97,48 @@ ZSH_CUSTOM=$DOTFILES
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git z vscode git git-extras github aws osx yarn dash wp-cli)
 
 source $ZSH/oh-my-zsh.sh
+
+# ssh
+export SSH_KEY_PATH="~/.ssh/rsa_id"
+
+# NVM
+export NVM_DIR=~/.nvm
+ [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+ # place this after nvm initialization!
+ autoload -U add-zsh-hook
+ load-nvmrc() {
+   local node_version="$(nvm version)"
+   local nvmrc_path="$(nvm_find_nvmrc)"
+
+   if [ -n "$nvmrc_path" ]; then
+     local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
+
+     if [ "$nvmrc_node_version" = "N/A" ]; then
+       nvm install
+     elif [ "$nvmrc_node_version" != "$node_version" ]; then
+       nvm use
+     fi
+   elif [ "$node_version" != "$(nvm version default)" ]; then
+     echo "Reverting to nvm default version"
+     nvm use default
+   fi
+ }
+ add-zsh-hook chpwd load-nvmrc
+ load-nvmrc
+
+# compinit
+# _comp_options+=(globdots)
+setopt globdots
+
+eval "$(pyenv init -)"
+
+alias rstudio='open -a Rstudio'
+
+alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
 # User configuration
 
