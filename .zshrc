@@ -38,7 +38,6 @@ export MNML_RPROMPT=('mnml_cwd 20')
 # ZSH_THEME="minimal"
 ZSH_THEME="robbyrussell"
 
-
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
@@ -105,30 +104,9 @@ source $ZSH/oh-my-zsh.sh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # NVM
-export NVM_DIR=~/.nvm
- [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-
- # place this after nvm initialization!
- autoload -U add-zsh-hook
- load-nvmrc() {
-   local node_version="$(nvm version)"
-   local nvmrc_path="$(nvm_find_nvmrc)"
-
-   if [ -n "$nvmrc_path" ]; then
-     local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
-
-     if [ "$nvmrc_node_version" = "N/A" ]; then
-       nvm install
-     elif [ "$nvmrc_node_version" != "$node_version" ]; then
-       nvm use
-     fi
-   elif [ "$node_version" != "$(nvm version default)" ]; then
-     echo "Reverting to nvm default version"
-     nvm use default
-   fi
- }
- add-zsh-hook chpwd load-nvmrc
- load-nvmrc
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # compinit
 # _comp_options+=(globdots)
