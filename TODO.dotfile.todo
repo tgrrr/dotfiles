@@ -1,72 +1,56 @@
+☐ [Alfred 3 rather than 4 in brewfile](https://www.alfredapp.com/help/v3/)
 
-☐ [turn off telemetry](https://www.reddit.com/r/privacy/comments/80d8wu/just_realised_that_visual_studio_code_sends/)
-☐ [atom and vscode Shortcuts](https://github.com/tgrrr/tldr/tree/next/dev-setup/software/shortcuts)
-☐ [sync onetab](https://superuser.com/questions/630975/sync-onetab-tabs-on-chrome-across-different-pcs/849677)
-☐ webdav
-☐ OneNote: https://apps.apple.com/au/app/microsoft-onenote/id784801555?mt=12
+Still need to add to dotfile:
+  ☐ Python
+  ☐ r + rstudio
+  ☐ Netlify: netlify dev  `npm install netlify-cli -g`
+  ☐ oh my zsh:
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+  ☐ uberconference
+  ☐ sync settings vscode and atom
+    ☐ apm atom and extensions
+  ☐ Clone repo's:
 
-oh my zsh:
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-  git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+    git fetch && pull my favourite repos here
 
-vlc extensions:
-  ☐ /Applications/VLC.app/Contents/MacOS/share/lua/extensions/
-    https://github.com/varlesh/VLC-Arc-Dark  
-    curl  -O /Applications/VLC.app/Contents/MacOS/share/lua/extensions/ {NewFileName} "http://thecanadiantestbox.x10.mx/CC.zip"
+---
+
+LATER:
 
 Cleanup script:
-  ☐ yarn cache cleanup
-  ☐ node cache cleanup - checkme
-  ☐ https://github.com/tgrrr/tldr/blob/next/dev-setup/software/free-up-disk-space.md
-  ☐ check `update.sh`
+  ☐ `yarn cache cleanup`
+  ☐ CHECKME: `node cache cleanup`
+  ☐ check `update.sh` works well
   ☐ add to readme
+  ☐ CRON schedule weekly
 
+Free up disk space script:
+  ☐ https://github.com/tgrrr/tldr/blob/next/dev-setup/software/free-up-disk-space.md
 
-☐ Netlify: netlify dev  `npm install netlify-cli -g`
+Docs to check for dotfiles/settings:
+  ☐ [atom and vscode Shortcuts](https://github.com/tgrrr/tldr/tree/next/dev-setup/software/shortcuts)
+  ☐ [sync onetab](https://superuser.com/questions/630975/sync-onetab-tabs-on-chrome-across-different-pcs/849677)
+  ☐ OneNote: https://apps.apple.com/au/app/microsoft-onenote/id784801555?mt=12
+  Consolodate other Other software lists:
+    ☐ https://github.com/tgrrr/tldr/tree/next/dev-setup/software/config%20files
+    ☐ karabiner https://github.com/tgrrr/tldr/blob/next/dev-setup/software/config%20files/karabiner.json
+    ☐ Atom https://github.com/tgrrr/tldr/blob/next/dev-setup/software/config%20files/Atom%20setup.md
+    ☐ Rstudio https://github.com/tgrrr/tldr/blob/next/dev-setup/software/R-studio-setup.md
+    ☐ Chrome plugins: https://github.com/tgrrr/tldr/blob/next/dev-setup/software/dev%20chrome%20plugins.md
+    ☐ [old dev software instructions](https://github.com/tgrrr/tldr/blob/next/dev-setup/software/dev%20software.md)
+    ☐ https://github.com/tgrrr/tldr/blob/master/dev-setup/software/dev%20software.md
 
-Update dotfiles:
-✔ App store apps @done(20-01-08 15:54)
-✔ Theme etc in my zsh file @done(20-01-08 15:54)
-✔ arc @done(20-01-08 15:53)
-
-☐ sync settings vscode and atom
-  ☐ apm atom and extensions
-☐ Clone repo's:
-
-  git fetch && pull my favourite repos here
-  add to brew cask:
-    Github:
-      https://github.com/tgrrr?tab=repositories
-      ```
-      git@github.com:tgrrr/tldr.git
-      git@github.com:tgrrr/todo.git
-      ```
-      data-science
-      data-science-cheatsheets
-
-Consolodate other Other software lists:
-  ☐ https://github.com/tgrrr/tldr/tree/next/dev-setup/software/config%20files
-  ☐ karabiner https://github.com/tgrrr/tldr/blob/next/dev-setup/software/config%20files/karabiner.json
-  ☐ Atom https://github.com/tgrrr/tldr/blob/next/dev-setup/software/config%20files/Atom%20setup.md
-  ☐ Rstudio https://github.com/tgrrr/tldr/blob/next/dev-setup/software/R-studio-setup.md
-  ☐ Chrome plugins: https://github.com/tgrrr/tldr/blob/next/dev-setup/software/dev%20chrome%20plugins.md
-  ☐ [old dev software instructions](https://github.com/tgrrr/tldr/blob/next/dev-setup/software/dev%20software.md)
-  ☐ https://github.com/tgrrr/tldr/blob/master/dev-setup/software/dev%20software.md
+Other:
+  ☐ webdav altnernative to Google Drive/Apple iCloud/Dropbox for mackup
+  vlc extensions:
+    ☐ /Applications/VLC.app/Contents/MacOS/share/lua/extensions/
+      https://github.com/varlesh/VLC-Arc-Dark  
+      curl  -O /Applications/VLC.app/Contents/MacOS/share/lua/extensions/ {NewFileName} "http://thecanadiantestbox.x10.mx/CC.zip"
   
-Check these programs brew:
 https://github.com/tgrrr/todo/blob/master/backup-todo-PRIVATE.todo
-extract:
-  graddle
-  python
-  diff-so-fancy
-  grunt-cli
-  r
-  wget
-  cookiecutter
-  git-flow
-  imagemagick
-  lastpass-cli
-  # maybe later: heroku wpe-cli firebase-cli mongodb nginx pyenv php postgresql
+
+---
 
 Adobe Acrobat Reader DC
 Airflow
@@ -334,3 +318,12 @@ code --install-extension waderyan.gitblame
 code --install-extension wayou.vscode-todo-highlight
 code --install-extension xabikos.JavaScriptSnippets
 code --install-extension yzhang.markdown-all-in-one
+Archive:
+  ✔ Check Steps after setup @done(20-01-10 14:57)
+  ✔ [turn off telemetry](https://www.reddit.com/r/privacy/comments/80d8wu/just_realised_that_visual_studio_code_sends/) @done(20-01-10 14:57)
+  ✔ docker ID login @done(20-01-10 14:52)
+  ✔ fix notification sound in system preferences @done(20-01-10 14:52)
+  ✔ slack - also in app @done(20-01-10 14:52)
+  ✔ App store apps @done(20-01-08 15:54)
+  ✔ Theme etc in my zsh file @done(20-01-08 15:54)
+  ✔ arc @done(20-01-08 15:53)

@@ -1,5 +1,10 @@
 ## Your Own Dotfiles
 
+📖 Read the blog post: https://driesvints.com/blog/getting-started-with-dotfiles  
+📹 Watch the screencast on Laracasts: https://laracasts.com/series/guest-spotlight/episodes/1
+
+These instructions are for when you've already set up your dotfiles. If you want to get started with your own dotfiles.
+
 **Please note that the instructions below assume you already have set up Oh My Zsh so make sure to first [install Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh#getting-started) before you continue.**
 
 If you want to start with your own dotfiles from this setup, it's pretty easy to do so. First of all you'll need to fork this repo. After that you can tweak it the way you want.

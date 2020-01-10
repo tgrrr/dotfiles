@@ -50,6 +50,7 @@ cask 'transmit'
 cask 'vlc'
 cask 'signal'
 cask 'purevpn'
+cask 'zoomus'
 
 # Quicklook
 cask 'qlcolorcode'
