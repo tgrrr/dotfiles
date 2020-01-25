@@ -38,6 +38,7 @@ If you did all of the above you may now follow these install instructions to set
 
 ## Steps after running dotfile
 
+- Google drive backup and sync setup
 - VS Code extensions with `syncing`
 - Setup Arc Backup
 - [turn off telemetry](https://www.reddit.com/r/privacy/comments/80d8wu/just_realised_that_visual_studio_code_sends/)

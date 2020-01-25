@@ -23,6 +23,7 @@ brew 'zlib' # Needed for Memcached
 # Development
 
 brew 'imagemagick'
+brew 'lastpass-cli'
 brew 'mysql'
 brew 'nginx'
 brew 'yarn'

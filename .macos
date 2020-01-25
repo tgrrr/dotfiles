@@ -619,6 +619,10 @@ defaults write com.apple.mail SpellCheckingBehavior -string "NoSpellCheckingEnab
 # Rebuild the index from scratch
 # sudo mdutil -E / > /dev/null
 
+# disable command + space so we can use it for Alfred https://superuser.com/a/1211170
+/usr/libexec/PlistBuddy ~/Library/Preferences/com.apple.symbolichotkeys.plist -c \
+  "Set AppleSymbolicHotKeys:64:enabled false"
+
 ###############################################################################
 # Terminal & iTerm 2                                                          #
 ###############################################################################
@@ -890,6 +894,7 @@ defaults write org.m0k.transmission BlocklistAutoUpdate -bool true
 
 # Randomize port on launch
 defaults write org.m0k.transmission RandomPort -bool true
+
 
 ###############################################################################
 # Kill affected applications                                                  #

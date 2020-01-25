@@ -10,7 +10,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Paths:
 
 PATH="/usr/local/bin:$(getconf PATH)"
-export PATH=${PATH}:/usr/local/sbin:/usr/local/bin/:$PATH:/usr/local/lib/node_modules/npm/bin:/Applications/Anaconda/anaconda3/bin:/Users/phil/.local/bin
+export PATH=${PATH}:/usr/local/sbin:/usr/local/bin/:$PATH:/usr/local/lib/node_modules/npm/bin:
 
 # export PATH="/usr/local/sbin:$PATH"
 # Add paths for Android, Tex, Anaconda
@@ -37,6 +37,7 @@ export MNML_RPROMPT=('mnml_cwd 20')
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="minimal"
 ZSH_THEME="robbyrussell"
+
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -96,7 +97,7 @@ ZSH_CUSTOM=$DOTFILES
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z vscode git git-extras github aws osx yarn dash wp-cli)
+plugins=(git z vscode git git-extras github aws osx yarn dash wp-cli vscode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -112,7 +113,7 @@ export NVM_DIR="$HOME/.nvm"
 # _comp_options+=(globdots)
 setopt globdots
 
-eval "$(pyenv init -)"
+# eval "$(pyenv init -)"
 
 alias rstudio='open -a Rstudio'
 

@@ -1,50 +1,107 @@
-☐ [Alfred 3 rather than 4 in brewfile](https://www.alfredapp.com/help/v3/)
+☐ myriad pro light + regular download
+☐ [dotdrop](https://github.com/deadc0de6/dotdrop) to manage profiles
+
+☐ kindle for mac
+npm install -g expo-cli
+https://expo.io/
+
+☐ `pyenv install 3.8.1`
+
+Microsoft NTFS for Mac by Paragon Software
+OR oxfuse
+  brew install homebrew/fuse/ntfs-3g:
+  In any case, you can use FUSE for macOS to write over NTFS formatted disk by following these steps:
+
+      Download osxfuse. Install it.
+      Make sure you have downloaded Homebrew, which is a command line package manager.
+      Open Terminal. You do this by opening your Applications folder, where the Terminal application is located.
+      After you’ve opened Terminal, type in this command:
+
+  brew install homebrew/fuse/ntfs-3g
+
+      Restart your Mac, and before the OS X starts, press and hold Command+R until the Apple icon and a progress bar appears, and then release. This will boot you to Recovery mode, instead of restarting.
+      Open Terminal from the Utilities menu and type this command:
+
+  csrutil disable
+
+  This will disable SIP (System Integrity Protection) or “rootless” mode, and it should show in a display message. Restart your computer.
+
+      After you have rebooted, open Terminal again and type these commands:
+
+  sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.original
+
+  sudo ln -s /usr/local/sbin/mount_ntfs /sbin/mount_ntfs
+
+      Reboot your computer again and repeat what you did in Step 5, so that you reboot into recovery mode.
+      Once you’re in recovery, re-enable SIP by opening Terminal and typing this command:
+
+  csrutil enable 
+
+
+
+  expo start
+
+☐ Commands to git sync todo tldr and dotfile in the `update.sh`
+
+
+✔ Fix minimise window into application icon @done(20-01-16 13:34)
+  defaults write com.apple.Dock showhidden -boolean no; killall Dock
 
 Still need to add to dotfile:
+  ☐ duckduckgo in firefox | Chrome
   ☐ Python
   ☐ r + rstudio
+  ☐ Dash Kapelli v3 https://kapeli.com/downloads/v3/Dash.zip
+  ☐ lastpass from mac app store
   ☐ Netlify: netlify dev  `npm install netlify-cli -g`
   ☐ oh my zsh:
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
     git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
-  ☐ uberconference
-  ☐ sync settings vscode and atom
-    ☐ apm atom and extensions
-  ☐ Clone repo's:
 
+  ☐ sync settings vscode and atom
+    apm atom and extensions
+  ☐ Clone repo's:
     git fetch && pull my favourite repos here
+
+NA in homebrew:
+  uberconference - NA
+  oh-my-zsh
+  [Alfred 3 rather than 4 in brewfile](https://www.alfredapp.com/help/v3/)
+    alfred apple + space shortcut
+      (also in readme)
 
 ---
 
 LATER:
+Add Android and iOS software
 
 Cleanup script:
-  ☐ `yarn cache cleanup`
-  ☐ CHECKME: `node cache cleanup`
-  ☐ check `update.sh` works well
-  ☐ add to readme
-  ☐ CRON schedule weekly
+  `yarn cache cleanup`
+  CHECKME: `node cache cleanup`
+  check `update.sh` works well
+  add to readme
+  CRON schedule weekly
 
 Free up disk space script:
-  ☐ https://github.com/tgrrr/tldr/blob/next/dev-setup/software/free-up-disk-space.md
+  https://github.com/tgrrr/tldr/blob/next/dev-setup/software/free-up-disk-space.md
 
 Docs to check for dotfiles/settings:
-  ☐ [atom and vscode Shortcuts](https://github.com/tgrrr/tldr/tree/next/dev-setup/software/shortcuts)
-  ☐ [sync onetab](https://superuser.com/questions/630975/sync-onetab-tabs-on-chrome-across-different-pcs/849677)
-  ☐ OneNote: https://apps.apple.com/au/app/microsoft-onenote/id784801555?mt=12
-  Consolodate other Other software lists:
-    ☐ https://github.com/tgrrr/tldr/tree/next/dev-setup/software/config%20files
-    ☐ karabiner https://github.com/tgrrr/tldr/blob/next/dev-setup/software/config%20files/karabiner.json
-    ☐ Atom https://github.com/tgrrr/tldr/blob/next/dev-setup/software/config%20files/Atom%20setup.md
-    ☐ Rstudio https://github.com/tgrrr/tldr/blob/next/dev-setup/software/R-studio-setup.md
-    ☐ Chrome plugins: https://github.com/tgrrr/tldr/blob/next/dev-setup/software/dev%20chrome%20plugins.md
-    ☐ [old dev software instructions](https://github.com/tgrrr/tldr/blob/next/dev-setup/software/dev%20software.md)
-    ☐ https://github.com/tgrrr/tldr/blob/master/dev-setup/software/dev%20software.md
+  [atom and vscode Shortcuts](https://github.com/tgrrr/tldr/tree/next/dev-setup/software/shortcuts)
+  [sync onetab](https://superuser.com/questions/630975/sync-onetab-tabs-on-chrome-across-different-pcs/849677)
+  OneNote: https://apps.apple.com/au/app/microsoft-onenote/id784801555?mt=12
+    Consolodate other Other software lists:
+    https://github.com/tgrrr/tldr/tree/next/dev-setup/software/config%20files
+    karabiner https://github.com/tgrrr/tldr/blob/next/dev-setup/software/config%20files/karabiner.json
+    Atom https://github.com/tgrrr/tldr/blob/next/dev-setup/software/config%20files/Atom%20setup.md
+    Rstudio https://github.com/tgrrr/tldr/blob/next/dev-setup/software/R-studio-setup.md
+    Chrome plugins: https://github.com/tgrrr/tldr/blob/next/dev-setup/software/dev%20chrome%20plugins.md
+    [old dev software instructions](https://github.com/tgrrr/tldr/blob/next/dev-setup/software/dev%20software.md)
+    https://github.com/tgrrr/tldr/blob/master/dev-setup/software/dev%20software.md
 
 Other:
-  ☐ webdav altnernative to Google Drive/Apple iCloud/Dropbox for mackup
+  webdav altnernative to Google Drive/Apple iCloud/Dropbox for mackup
   vlc extensions:
-    ☐ /Applications/VLC.app/Contents/MacOS/share/lua/extensions/
+    /Applications/VLC.app/Contents/MacOS/share/lua/extensions/
       https://github.com/varlesh/VLC-Arc-Dark  
       curl  -O /Applications/VLC.app/Contents/MacOS/share/lua/extensions/ {NewFileName} "http://thecanadiantestbox.x10.mx/CC.zip"
   
