@@ -42,7 +42,8 @@ If you did all of the above you may now follow these install instructions to set
 - VS Code extensions with `syncing`
 - Setup Arc Backup
 - [turn off telemetry](https://www.reddit.com/r/privacy/comments/80d8wu/just_realised_that_visual_studio_code_sends/)
-  ```
+
+  ```bash
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
   "code-runner.enableAppInsights": false,
@@ -51,7 +52,7 @@ If you did all of the above you may now follow these install instructions to set
   "extensions.ignoreRecommendations": true,
   ```
 
-  ```
+  ```bash
   block dns:
   0.0.0.0 dc.services.visualstudio.com
   0.0.0.0 marketplace.visualstudio.com
@@ -59,8 +60,9 @@ If you did all of the above you may now follow these install instructions to set
   0.0.0.0 vortex.data.microsoft.com
   0.0.0.0 weu-breeziest-in.cloudapp.net
   ```
+
 - docker ID login
-- fix notification sound in system preferences 
+- fix notification sound in system preferences
   - slack - also in app
 - Check Apps allowed in Users & Groups. Eg. Spectacle
 

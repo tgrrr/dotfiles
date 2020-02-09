@@ -1,0 +1,16 @@
+- based on Debian
+
+  Brew
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+    test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
+    test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+    test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
+    echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
+
+WARN[2020-01-28T01:32:59.969998666+11:00] Unable to read /etc/rancher/k3s/k3s.yaml, please start server with --write-kubeconfig-mode to modify kube config permissions
+kubectl controls the Kubernetes cluster manager.
+
+___
+
+- [install rapsberry pi multitool](https://www.balena.io/blog/two-projects-one-device-turn-your-raspberry-pi-into-a-multitool/#the-idea)
+- [raspberry camera module](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/4)

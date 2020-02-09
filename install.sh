@@ -41,6 +41,10 @@ ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
 # copy vscode extensions to recommended extensions
 cp extensions.json ~/.vscode/
 
+# Install Atom extensions
+
+sh ./atom-extensions.sh
+
 # Set macOS preferences
 # We will run this last because this will reload the shell
 source .macos

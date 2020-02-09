@@ -32,6 +32,11 @@
 	<false/>
 	<key>NSScrollViewShouldScrollUnderTitlebar</key>
 	<false/>
+	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
+	<array>
+		<string>0.000000, 0.000000, 224.000000, 258.000000, NO, NO</string>
+		<string>0.000000, 259.000000, 224.000000, 48.000000, NO, NO</string>
+	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGNjdYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
@@ -55,8 +60,13 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<dict>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+	</dict>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>131 73 570 452 0 0 1280 777 </string>
+	<string>0 79 1280 690 0 0 1280 777 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -660,16 +670,22 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1280, 800}}</string>
 		<key>topLeft</key>
-		<string>{95, 717}</string>
+		<string>{0, 777}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>D8D9E7A6-2216-429C-809C-7293B22A23AE</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>2</integer>
+	<integer>9</integer>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
+	<true/>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
+	<integer>0</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
-	<real>600322409.01945698</real>
+	<real>600843075.63382196</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
 	<true/>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
 	<key>NoSyncRecordedVariables</key>
 	<dict>
 		<key>0</key>
@@ -1376,12 +1392,51 @@
 			</dict>
 		</array>
 	</dict>
+	<key>NoSyncSearchHistory2</key>
+	<array>
+		<string>group</string>
+	</array>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>600149609.01929295</real>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
+	<key>PointerActions</key>
+	<dict>
+		<key>Button,1,1,,</key>
+		<dict>
+			<key>Action</key>
+			<string>kContextMenuPointerAction</string>
+		</dict>
+		<key>Button,2,1,,</key>
+		<dict>
+			<key>Action</key>
+			<string>kPasteFromClipboardPointerAction</string>
+		</dict>
+		<key>Gesture,ThreeFingerSwipeDown,,</key>
+		<dict>
+			<key>Action</key>
+			<string>kPrevWindowPointerAction</string>
+		</dict>
+		<key>Gesture,ThreeFingerSwipeLeft,,</key>
+		<dict>
+			<key>Action</key>
+			<string>kPrevTabPointerAction</string>
+		</dict>
+		<key>Gesture,ThreeFingerSwipeRight,,</key>
+		<dict>
+			<key>Action</key>
+			<string>kNextTabPointerAction</string>
+		</dict>
+		<key>Gesture,ThreeFingerSwipeUp,,</key>
+		<dict>
+			<key>Action</key>
+			<string>kNextWindowPointerAction</string>
+		</dict>
+	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/phil/code/apps/dotfiles</string>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>SUEnableAutomaticChecks</key>
@@ -1393,13 +1448,15 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-01-08T04:24:57Z</date>
+	<date>2020-01-28T12:05:28Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
+	<key>findMode_iTerm</key>
+	<integer>0</integer>
 	<key>iTerm Version</key>
 	<string>3.3.7</string>
 </dict>

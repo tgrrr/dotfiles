@@ -1,389 +1,110 @@
-☐ myriad pro light + regular download
-☐ [dotdrop](https://github.com/deadc0de6/dotdrop) to manage profiles
+# DOTFILE TODO
 
-☐ kindle for mac
-npm install -g expo-cli
-https://expo.io/
+☐ settings are reverting, how to undo them @created(20-02-09 13:13)
+Add Android and iOS software
 
-☐ Npm global
-  Bash ls
-  Etc
+## ADD TO DOTFILE
 
-☐ Post run setup
-☐ data science steps and readme
-☐ step: store api keys with LastPass #2 
+Data Science:
+  ☐ Latex
+  Python:
+    `pyenv install 3.8.1`
+    pip install Django
+    - [faster with vmware](https://www.vmware.com/products/fusion.html)
+    brew cask install virtualbox
+      ☐ pyenv-virtual-environment @created(20-02-03 19:03)
+      virtual-box
+        [vmware](https://rmit.onthehub.com/WebStore/OfferingDetails.aspx)
+    
+  R:
+    if there's problems with r, remove and install from cran `https://cran.r-project.org/bin/macosx/`
+    r default settings file
 
-☐ `pyenv install 3.8.1`
+    # ? brew cask install xquartz
+    ☐ pip install notebook jupyterlab @created(20-02-09 13:11)
 
-Microsoft NTFS for Mac by Paragon Software
-OR oxfuse
-  brew install homebrew/fuse/ntfs-3g:
-  In any case, you can use FUSE for macOS to write over NTFS formatted disk by following these steps:
+    # brew install r
+    # echo 'Sys.setlocale(category="LC_ALL", locale = "en_US.UTF-8")' >> ~/.bash_profile
+    OR
 
-      Download osxfuse. Install it.
-      Make sure you have downloaded Homebrew, which is a command line package manager.
-      Open Terminal. You do this by opening your Applications folder, where the Terminal application is located.
-      After you’ve opened Terminal, type in this command:
+    echo 'Sys.setlocale(category="LC_ALL", locale = "en_US.UTF-8")' >> ~/.bash_profile
 
-  brew install homebrew/fuse/ntfs-3g
+    brew install Caskroom/cask/rstudio
 
-      Restart your Mac, and before the OS X starts, press and hold Command+R until the Apple icon and a progress bar appears, and then release. This will boot you to Recovery mode, instead of restarting.
-      Open Terminal from the Utilities menu and type this command:
+System:
+  ☐ myriad pro light + regular download
+  Lines to get installed packages:
+    These lines below into readme ➜  `~ code --list-extensions | xargs -L 1 echo code --install-extension`
+    ☐ Npm global
+    Bash ls
+    Etc
 
-  csrutil disable
+Mac:
+  ☐ kindle for mac
+  ☐ Finder default window set to ~/code @created(20-02-09 13:09)
+  ☐ Add screenshot folder, and set as screenshot default @created(20-02-09 13:09)
 
-  This will disable SIP (System Integrity Protection) or “rootless” mode, and it should show in a display message. Restart your computer.
+No brew formula/mac app:
+  ☐ [kite](https://kite.com/download/)  @created(20-02-03 19:03)
+    ☐ Readme: disable kite telemetry @created(20-02-03 19:06)
 
-      After you have rebooted, open Terminal again and type these commands:
-
-  sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.original
-
-  sudo ln -s /usr/local/sbin/mount_ntfs /sbin/mount_ntfs
-
-      Reboot your computer again and repeat what you did in Step 5, so that you reboot into recovery mode.
-      Once you’re in recovery, re-enable SIP by opening Terminal and typing this command:
-
-  csrutil enable 
-
-
-
-  expo start
-
-☐ Commands to git sync todo tldr and dotfile in the `update.sh`
-
-
-✔ Fix minimise window into application icon @done(20-01-16 13:34)
-  defaults write com.apple.Dock showhidden -boolean no; killall Dock
-
-Still need to add to dotfile:
+Other:
   ☐ duckduckgo in firefox | Chrome
-  ☐ Python
-  ☐ r + rstudio
   ☐ Dash Kapelli v3 https://kapeli.com/downloads/v3/Dash.zip
   ☐ lastpass from mac app store
   ☐ Netlify: netlify dev  `npm install netlify-cli -g`
   ☐ oh my zsh:
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
     git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
-
   ☐ sync settings vscode and atom
     apm atom and extensions
   ☐ Clone repo's:
     git fetch && pull my favourite repos here
+  ☐ global gitignore: @created(20-02-09 13:10)
+    copy from this file to `/Users/<computername>/.gitignore_global`
+    howto: check where the current gitignore is: `git config --get core.excludesfile`
+  ☐ jscpd js copy paste detector @created(20-02-09 13:09):
+    ```bash
+    # duplicate code refactor
+    # https://github.com/kucherenko/jscpd
+    $ npm install -g jscpd
+    npx jscpd
+    ```
+    vscode plugin
+  ☐ wordpress with docker: @created(20-02-09 13:17)
+    brew install wp-cli
+    wp plugin install --activate
+    OR php dev in virtualbox
+      `brew cask install vagrant;
+      brew cask install virtualbox;`
+  ☐ https://expo.io/ @created(20-02-09 13:15)
 
-NA in homebrew:
-  uberconference - NA
-  oh-my-zsh
-  [Alfred 3 rather than 4 in brewfile](https://www.alfredapp.com/help/v3/)
-    alfred apple + space shortcut
-      (also in readme)
+Readme:
+  ☐ Post/after run setup
+  ☐ data science steps and readme
+  ☐ manaul step: store api keys with LastPass #2 
+  RMIT softwares:
+  [paid (but discounted for students)](https://rmit.onthehub.com/WebStore/ProductsByMajorVersionList.aspx)
+  ? [EndNote for Mac](https://drive.google.com/open?id=1FBeQYPxQebUvcUAHZ2FwMdZMZZdtSTW3)
+    - add endnote to dotfile
+  ? [Prism / Graphpad](https://www.graphpad.com/scientific-software/prism/)
+  ? https://docs.google.com/document/d/1yShjwggcyn2jeCM3I1AaHjiGzvSmb4LJK2VquNJgb5I/edit?skip_itp2_check=true#
+  https://rmit.onthehub.com/WebStore/Account/YourEligibility.aspx
+  https://www.qoppa.com/pdfstudioviewer/download/
 
----
+`update.sh` script:
+  Commands to git sync todo tldr and dotfile in the `update.sh`
 
-LATER:
-Add Android and iOS software
+Didn't work: 
+  Microsoft NTFS for Mac by Paragon Software
 
-Cleanup script:
-  `yarn cache cleanup`
-  CHECKME: `node cache cleanup`
-  check `update.sh` works well
-  add to readme
-  CRON schedule weekly
 
-Free up disk space script:
-  https://github.com/tgrrr/tldr/blob/next/dev-setup/software/free-up-disk-space.md
-
-Docs to check for dotfiles/settings:
-  [atom and vscode Shortcuts](https://github.com/tgrrr/tldr/tree/next/dev-setup/software/shortcuts)
-  [sync onetab](https://superuser.com/questions/630975/sync-onetab-tabs-on-chrome-across-different-pcs/849677)
-  OneNote: https://apps.apple.com/au/app/microsoft-onenote/id784801555?mt=12
-    Consolodate other Other software lists:
-    https://github.com/tgrrr/tldr/tree/next/dev-setup/software/config%20files
-    karabiner https://github.com/tgrrr/tldr/blob/next/dev-setup/software/config%20files/karabiner.json
-    Atom https://github.com/tgrrr/tldr/blob/next/dev-setup/software/config%20files/Atom%20setup.md
-    Rstudio https://github.com/tgrrr/tldr/blob/next/dev-setup/software/R-studio-setup.md
-    Chrome plugins: https://github.com/tgrrr/tldr/blob/next/dev-setup/software/dev%20chrome%20plugins.md
-    [old dev software instructions](https://github.com/tgrrr/tldr/blob/next/dev-setup/software/dev%20software.md)
-    https://github.com/tgrrr/tldr/blob/master/dev-setup/software/dev%20software.md
-
-Other:
-  webdav altnernative to Google Drive/Apple iCloud/Dropbox for mackup
-  vlc extensions:
-    /Applications/VLC.app/Contents/MacOS/share/lua/extensions/
-      https://github.com/varlesh/VLC-Arc-Dark  
-      curl  -O /Applications/VLC.app/Contents/MacOS/share/lua/extensions/ {NewFileName} "http://thecanadiantestbox.x10.mx/CC.zip"
-  
-https://github.com/tgrrr/todo/blob/master/backup-todo-PRIVATE.todo
-
----
-
-Adobe Acrobat Reader DC
-Airflow
-App Store
-Arduino
-ArduinoCreateAgent-1.1
-
-balenaEtcher
-BeerSmith3
-BitBar
-Books
-Bot Framework Emulator
-Cypress
-DaisyDisk
-Dash
-Daum Equation Editor
-Discord
-draw.io.app
-Firefox
-Flickr Uploadr
-Freedom
-GraphQL IDE
-HandBrake
-Home
-Image Capture
-Itsycal
-Joplin
-Karabiner-Elements
-Karabiner-EventViewer
-Kindle
-Kite
-Mathpix Snipping Tool
-Microsoft OneNote
-Notion
-nteract
-OBS
-Paragon NTFS for Mac 15
-Pomello
-Postgres
-Postman
-R
-Radio Silence
-RBdigital
-React Studio
-RescueTime
-RStudio
-Sequel Pro
-Signal
-Sketch
-Skitch
-Skype
-Spectacle Editor
-Spotify
-Station
-Stickies
-Synergy
-TeamViewer
-TextEdit
-The Unarchiver
-TorGuard
-Transmit
-Twitch
-Vanilla
-VirtualBox
-Visual Studio Code
-VLC
-Wacom Tablet
-Xcode
-zoom.us
-
-➜  ~ npm list -g --depth 0
-/Users/phil/.nvm/versions/node/v8.11.4/lib
-├── @shoutem/cli
-├── alfred-atom
-├── codesandbox
-├── cordova
-├── create-component-app
-├── create-react-native-app
-├── docsify-cli
-├── elm
-├── exp
-├── expo-cli
-├── feathers-cli
-├── firebase-tools
-├── ios-deploy
-├── ios-sim
-├── jsinspect
-├── netlify-cli
-├── nodechef-cli
-├── npm
-├── npm-check
-├── react-proptypes-generate
-├── react-static
-├── serve
-├── spectacle-renderer
-└── yo
-
-➜  ~ apm ls
-
-Dev Packages (1) /Users/phil/.atom/dev/packages
-└── language-todo@0.29.4
-
-Community Packages (75) /Users/phil/.atom/packages
-├── Hydrogen@2.12.1
-├── atom-beautify@0.33.4 (disabled)
-├── atom-codesandbox@0.8.0 (disabled)
-├── atom-html-preview@0.2.6 (disabled)
-├── atom-increment@0.3.4
-├── atom-inline-blame@0.0.7
-├── atom-jump-block@0.5.4
-├── atom-language-r@1.4.8
-├── atom-math@0.0.9 (disabled)
-├── atom-notes@1.20.0
-├── atom-react-autocomplete@0.1.10 (disabled)
-├── atom-react-preview@2.0.0 (disabled)
-├── atom-wrap-in-tag@0.6.0 (disabled)
-├── autocomplete-python@1.16.0
-├── better-git-blame@0.4.7 (disabled)
-├── dash@1.7.1 (disabled)
-├── data-explorer@0.7.0 (disabled)
-├── docblock-python@0.15.1
-├── es6-javascript@1.0.0
-├── es6-react-redux-snippets@3.9.0
-├── file-icons@2.1.35
-├── hey-pane@1.2.0 (disabled)
-├── hydrogen-cell-separator@0.4.1 (disabled)
-├── hydrogen-launcher@1.2.2
-├── hydrogen-python@0.0.8 (disabled)
-├── hydrogen-xdbg@0.0.4 (disabled)
-├── hyperclick@0.1.5 (disabled)
-├── js-hyperclick@1.13.3 (disabled)
-├── js-refactor@0.8.1 (disabled)
-├── jsx-comment@0.2.0 (disabled)
-├── kite@0.173.0
-├── language-atom-notes@0.4.1
-├── language-babel@2.85.0 (disabled)
-├── language-graphql@1.0.0
-├── language-javascript-jsx@0.3.7
-├── language-latex@1.2.0
-├── language-mdx@0.1.0 (disabled)
-├── language-r@0.4.2
-├── language-sas@0.2.4 (disabled)
-├── language-todo-extra-words@0.2.0
-├── latex@0.50.2
-├── lebab@0.10.0 (disabled)
-├── linter@2.3.1 (disabled)
-├── linter-eslint@8.5.5
-├── linter-lintr@1.2.0 (disabled)
-├── linter-pylint@2.1.1
-├── linter-python@3.1.2 (disabled)
-├── linter-ui-default@1.8.0 (disabled)
-├── markdown-preview-enhanced@0.16.3
-├── markdown-table-editor@1.1.2
-├── markdown-writer@2.11.9 (disabled)
-├── open-file@1.4.0
-├── pigments@0.40.2 (disabled)
-├── platformio-ide-terminal@2.9.4 (disabled)
-├── prettier-atom@0.57.2 (disabled)
-├── preview-inline@1.5.1
-├── python-debugger@0.2.0 (disabled)
-├── python-tools@0.6.9 (disabled)
-├── r-exec@0.5.0 (disabled)
-├── r-syntax@1.0.5 (disabled)
-├── rainbow-csv@0.3.1
-├── react@0.18.0
-├── react-snippets@1.2.0 (disabled)
-├── refactor@0.11.5
-├── relative-numbers@0.9.0 (disabled)
-├── save-workspace@0.5.0 (disabled)
-├── scroll-through-time@0.3.1 (disabled)
-├── sort-lines@0.19.0
-├── split-diff@1.6.1
-├── sync-settings@0.8.6
-├── tail@0.1.0 (disabled)
-├── teletype@0.13.4
-├── terminal-plus@0.14.5 (disabled)
-├── todo-show@2.3.2
-└── tree-view-copy-relative-path@1.2.0
-
-➜  ~ code --list-extensions | xargs -L 1 echo code --install-extension
-
-code --install-extension aeschli.vscode-css-formatter
-code --install-extension ahmadawais.shades-of-purple
-code --install-extension alexkrechik.cucumberautocomplete
-code --install-extension almenon.arepl
-code --install-extension angryobject.react-pure-to-class-vscode
-code --install-extension antmdvs.vscode-react-hooks-snippets
-code --install-extension aprilandjan.ascii-tree-generator
-code --install-extension auchenberg.vscode-browser-preview
-code --install-extension be5invis.toml
-code --install-extension Blodwynn.featurehighlight
-code --install-extension bmewburn.vscode-intelephense-client
-code --install-extension BorisA.calc
-code --install-extension burkeholland.react-food-truck
-code --install-extension burkeholland.simple-react-snippets
-code --install-extension capaj.vscode-exports-autocomplete
-code --install-extension christian-kohler.npm-intellisense
-code --install-extension christian-kohler.path-intellisense
-code --install-extension cmstead.jsrefactor
-code --install-extension CoenraadS.bracket-pair-colorizer
-code --install-extension DavidAnson.vscode-markdownlint
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension deerawan.vscode-dash
-code --install-extension dgerrard.stuck-overflow
-code --install-extension donjayamanne.githistory
-code --install-extension drKnoxy.eslint-disable-snippets
-code --install-extension dsznajder.es7-react-js-snippets
-code --install-extension eamodio.gitlens
-code --install-extension eg2.vscode-npm-script
-code --install-extension esbenp.prettier-vscode
-code --install-extension felipecaputo.git-project-manager
-code --install-extension formulahendry.auto-rename-tag
-code --install-extension gcrev93.StackSearchExt
-code --install-extension ghmcadams.lintlens
-code --install-extension GitHub.vscode-pull-request-github
-code --install-extension gottfired.css2react
-code --install-extension Gruntfuggly.todo-tree
-code --install-extension huizhou.githd
-code --install-extension humao.rest-client
-code --install-extension Ikuyadeu.r
-code --install-extension ionutvmi.path-autocomplete
-code --install-extension jakob101.RelativePath
-code --install-extension kiteco.kite
-code --install-extension leveluptutorials.theme-levelup
-code --install-extension lihui.vs-color-picker
-code --install-extension mechatroner.rainbow-csv
-code --install-extension mikestead.dotenv
-code --install-extension Mikhail-Arkhipov.r
-code --install-extension minhthai.vscode-todo-parser
-code --install-extension moppitz.vscode-extension-auto-import
-code --install-extension mrmlnc.vscode-lebab
-code --install-extension ms-azuretools.vscode-docker
-code --install-extension ms-mssql.mssql
-code --install-extension ms-python.python
-code --install-extension ms-vscode.atom-keybindings
-code --install-extension ms-vsliveshare.vsliveshare
-code --install-extension msjsdiag.debugger-for-chrome
-code --install-extension Mukundan.python-docs
-code --install-extension nathanchapman.JavaScriptSnippets
-code --install-extension naumovs.color-highlight
-code --install-extension nmsmith89.incrementor
-code --install-extension nonoroazoro.syncing
-code --install-extension NuclleaR.vscode-extension-auto-import
-code --install-extension otto77.folder-compare
-code --install-extension Prisma.vscode-graphql
-code --install-extension ryu1kn.partial-diff
-code --install-extension salesforce.salesforcedx-vscode
-code --install-extension salesforce.salesforcedx-vscode-apex
-code --install-extension salesforce.salesforcedx-vscode-apex-debugger
-code --install-extension salesforce.salesforcedx-vscode-apex-replay-debugger
-code --install-extension salesforce.salesforcedx-vscode-core
-code --install-extension salesforce.salesforcedx-vscode-lightning
-code --install-extension salesforce.salesforcedx-vscode-lwc
-code --install-extension salesforce.salesforcedx-vscode-visualforce
-code --install-extension Shan.code-settings-sync
-code --install-extension shd101wyy.markdown-preview-enhanced
-code --install-extension silvenon.mdx
-code --install-extension steoates.autoimport
-code --install-extension stkb.rewrap
-code --install-extension suming.react-proptypes-generate
-code --install-extension TobiasTimm.raiju
-code --install-extension Tyriar.sort-lines
-code --install-extension VaccineAndDrugEvaluationCentre.sas
-code --install-extension waderyan.gitblame
-code --install-extension wayou.vscode-todo-highlight
-code --install-extension xabikos.JavaScriptSnippets
-code --install-extension yzhang.markdown-all-in-one
 Archive:
+  ✔ problem: has installed another version of python somehow with pip @created(20-02-09 13:11) @done(20-02-09 13:11)
+  ✔ pip @created(20-02-03 19:02) @done(20-02-03 19:03) @project(Data Science.Python)
+  ✔ arq @created(20-02-03 19:04) @done(20-02-03 19:04) @project(No brew formula/mac app)
+  ✔ Fix minimise window into application icon @done(20-01-16 13:34)
+    defaults write com.apple.Dock showhidden -boolean no; killall Dock
   ✔ Check Steps after setup @done(20-01-10 14:57)
   ✔ [turn off telemetry](https://www.reddit.com/r/privacy/comments/80d8wu/just_realised_that_visual_studio_code_sends/) @done(20-01-10 14:57)
   ✔ docker ID login @done(20-01-10 14:52)
