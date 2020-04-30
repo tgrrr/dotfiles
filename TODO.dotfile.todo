@@ -1,5 +1,7 @@
 # DOTFILE TODO
 
+- link gitignore_global link to one in dotfile
+
 todo.txt brew install todo-txt
      cp /usr/local/opt/todo-txt/todo.cfg ~/.todo.cfg
      edit .todo.cfg
