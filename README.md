@@ -7,12 +7,35 @@ This repository serves as my way to help me setup and maintain my Mac. It takes 
 First, go through the checklist below to make sure you didn't forget anything before you wipe your hard drive.
 
 - Did you commit and push any changes/branches to your **git repositories**?
-  - Check all branches
+  - __Check all branches__
+  - Check any wordpress stuff in www, etc
+- NEW: Recursively remove `node_modules` folders to free up space (if making a copy of files separate to git repo's)
+
+
+```zsh
+cd ~/code
+find . -type d -name node_modules -exec rmdir {} \;
+```
+
+- NEW: Free up space with DaisyDisk when backing up
+- NEW: check:
+  - [ ] Docker `docker ps -a`
+  - [ ] Node global `npm list -g --depth=0`
+  - [ ] Yarn Global `yarn global list` OR `~/.config/yarn/global`
+  - [ ] brew ls `brew ls`
+  - [ ] Atom packages `apm ls`
+    - [ ] Atom Settings - MackUp
+  - [ ] VS Code packages `code --list-extensions | xargs -L 1 echo code --install-extension`
+    - [ ] VSCode settings - MackUp
+  - [ ] Alfred settings (not in MackUp)  
+  - [ ] Radio Silence (screenshot)
+  - [ ] Oh my zsh config - mackup?
+
 - Did you remember to save all important **documents** from non-iCloud directories?
 - Did you save all of your work from **apps which aren't synced through iCloud**?
 - Did you remember to export important data from your **local database**?
 - Did you update [mackup](https://github.com/lra/mackup) to the latest version and ran `mackup backup`?
-  - **NOTE: I've synced to iCloud**
+  - **NOTE: I've synced mackup to iCloud**
 
 ## Install macOS cleanly
 

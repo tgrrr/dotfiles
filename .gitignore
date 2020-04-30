@@ -1,2 +1,7 @@
 Brewfile.lock.json
 PRIVATE-mac-backups-and-harddrives--todo.todo
+app-preferences/bitbar/node_modules
+emojiWeather.30m.js
+rescuetime.1h.py
+*.
+Icon[\r]

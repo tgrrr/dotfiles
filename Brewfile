@@ -20,6 +20,8 @@ brew 'terminal-notifier'
 brew 'tree' # List directories in a tree structure
 brew 'zlib' # Needed for Memcached
 
+
+
 # Development
 
 brew 'imagemagick'
@@ -35,6 +37,7 @@ cask 'arq-cloud-backup'
 cask 'discord'
 cask 'docker'
 cask 'docker-compose'
+cask 'dozer'
 cask 'firefox'
 cask 'github'
 cask 'google-backup-and-sync'
@@ -43,6 +46,7 @@ cask 'gpg-suite'
 cask 'insomnia'
 cask 'iterm2'
 cask 'nvm'
+cask 'rescuetime'
 cask 'slack'
 cask 'sourcetree'
 cask 'the-unarchiver'
@@ -52,6 +56,7 @@ cask 'vlc'
 cask 'signal'
 cask 'purevpn'
 cask 'zoomus'
+
 
 # Quicklook
 cask 'qlcolorcode'
