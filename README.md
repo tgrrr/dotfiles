@@ -55,6 +55,7 @@ If you did all of the above you may now follow these install instructions to set
 7. Update the name of your computer in `.macos`. Mine's currently called `ethel`.
 8. Run `./install.sh` OR `sh ./install.sh` to start the installation
 9. After mackup is synced with your cloud storage, restore preferences by running `mackup restore`
+
 10. Restart your computer to finalize the process. Your Mac is now ready to use!
 
 > Note: you can use a different location than `~/.dotfiles` if you want. Just make sure you also update the reference in the [`.zshrc`](./.zshrc) file.
@@ -64,7 +65,11 @@ If you did all of the above you may now follow these install instructions to set
 - Google drive backup and sync setup
 - VS Code extensions with `syncing`
 - Setup Arc Backup
-- [turn off telemetry](https://www.reddit.com/r/privacy/comments/80d8wu/just_realised_that_visual_studio_code_sends/)
+- disable kite telemetry @created(20-02-03 19:06)
+- manual step: store api keys with LastPass #2   
+- No brew formula/mac app:[kite](https://kite.com/download/)  @created(20-02-03 19:03)
+
+- [turn off vscode telemetry](https://www.reddit.com/r/privacy/comments/80d8wu/just_realised_that_visual_studio_code_sends/)
 
   ```bash
   "telemetry.enableCrashReporter": false,

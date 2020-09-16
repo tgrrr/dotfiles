@@ -83,10 +83,29 @@
 	<dict>
 		<key>installed</key>
 		<dict>
+			<key>JavaScript_Online</key>
+			<dict>
+				<key>date</key>
+				<date>2020-07-16T07:01:56Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>dom events</string>
+						<string>canvas</string>
+					</array>
+					<key>name</key>
+					<string>JavaScript (Online)</string>
+					<key>platform</key>
+					<string>soonline</string>
+					<key>uniqueIdentifier</key>
+					<string>JavaScript_Online</string>
+				</dict>
+			</dict>
 			<key>React_Online</key>
 			<dict>
 				<key>date</key>
-				<date>2020-01-16T06:17:09Z</date>
+				<date>2020-06-06T13:08:04Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -105,7 +124,7 @@
 			<key>TypeScript_Online</key>
 			<dict>
 				<key>date</key>
-				<date>2020-01-16T06:17:16Z</date>
+				<date>2020-07-16T07:01:25Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -144,6 +163,16 @@
 	<dict>
 		<key>installed</key>
 		<dict>
+			<key>http://kapeli.com/feeds/Arduino.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2020-07-16T07:03:39Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/Bash.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2020-07-16T07:03:07Z</date>
+			</dict>
 			<key>http://kapeli.com/feeds/CSS.xml</key>
 			<dict>
 				<key>date</key>
@@ -169,10 +198,20 @@
 				<key>date</key>
 				<date>2020-03-26T06:23:10Z</date>
 			</dict>
+			<key>http://kapeli.com/feeds/JavaScript.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2020-07-16T07:02:40Z</date>
+			</dict>
 			<key>http://kapeli.com/feeds/LaTeX.xml</key>
 			<dict>
 				<key>date</key>
 				<date>2020-03-26T06:24:54Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/Laravel.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2020-07-16T07:02:51Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Lo-Dash.xml</key>
 			<dict>
@@ -208,6 +247,11 @@
 			<dict>
 				<key>date</key>
 				<date>2020-01-16T06:03:10Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/VueJS.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2020-07-16T07:02:47Z</date>
 			</dict>
 		</dict>
 		<key>uninstalled</key>
@@ -253,11 +297,51 @@
 				<string>~/Library/Application Support/Dash/DocSets/Python_3/Python 3.docset</string>
 				<string>~/Library/Application Support/Dash/DocSets/Flask/Flask.docset</string>
 				<string>~/Library/Application Support/Dash/DocSets/Django/Django.docset</string>
+				<string>~/Library/Application Support/Dash/DocSets/LaTeX/LaTeX.docset</string>
+				<string>~/Library/Application Support/Dash/DocSets/R/R.docset</string>
 			</array>
 			<key>name</key>
-			<string>python</string>
+			<string>data science</string>
 			<key>placeholder</key>
-			<string>py</string>
+			<string>ds</string>
+			<key>searchSnippets</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>docsets</key>
+			<array>
+				<string>~/Library/Application Support/Dash/Stack Overflow/TypeScript Online/TypeScript_Online.docset</string>
+				<string>~/Library/Application Support/Dash/DocSets/React/React.docset</string>
+				<string>~/Library/Application Support/Dash/Stack Overflow/React Online/React_Online.docset</string>
+				<string>~/Library/Application Support/Dash/DocSets/TypeScript/TypeScript.docset</string>
+				<string>~/Library/Application Support/Dash/DocSets/Sass/Sass.docset</string>
+				<string>~/Library/Application Support/Dash/DocSets/HTML/HTML.docset</string>
+				<string>~/Library/Application Support/Dash/DocSets/CSS/CSS.docset</string>
+				<string>~/Library/Application Support/Dash/Stack Overflow/JavaScript Online/JavaScript_Online.docset</string>
+				<string>~/Library/Application Support/Dash/DocSets/JavaScript/JavaScript.docset</string>
+				<string>~/Library/Application Support/Dash/DocSets/VueJS/VueJS.docset</string>
+				<string>~/Library/Application Support/Dash/DocSets/Bash/Bash.docset</string>
+			</array>
+			<key>name</key>
+			<string>fe</string>
+			<key>placeholder</key>
+			<string>fe</string>
+			<key>searchSnippets</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>docsets</key>
+			<array>
+				<string>~/Library/Application Support/Dash/DocSets/Python_3/Python 3.docset</string>
+				<string>~/Library/Application Support/Dash/DocSets/Laravel/Laravel.docset</string>
+				<string>~/Library/Application Support/Dash/DocSets/Arduino/Arduino.docset</string>
+				<string>~/Library/Application Support/Dash/DocSets/Bash/Bash.docset</string>
+				<string>~/Library/Application Support/Dash/DocSets/Flask/Flask.docset</string>
+				<string>~/Library/Application Support/Dash/DocSets/Django/Django.docset</string>
+				<string>~/Library/Application Support/Dash/DocSets/Docker/Docker.docset</string>
+			</array>
+			<key>name</key>
+			<string>be</string>
 			<key>searchSnippets</key>
 			<true/>
 		</dict>

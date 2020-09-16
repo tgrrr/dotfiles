@@ -2,7 +2,7 @@
 
 # Thanks to Mathias Bynens!
 # ~/.macos — https://mths.be/macos
-
+ 
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
@@ -22,6 +22,16 @@ sudo scutil --set ComputerName "ethel"
 sudo scutil --set HostName "ethel"
 sudo scutil --set LocalHostName "ethel"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "ethel"
+
+# --- New:
+
+# allow tickbox to automatically open zoom
+​defaults write com.google.Chrome ExternalProtocolDialogShowAlwaysOpenCheckbox -bool true
+
+# Show hidden files in Finder
+defaults write com.apple.Dock showhidden -boolean no; killall Dock
+
+# ---
 
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
