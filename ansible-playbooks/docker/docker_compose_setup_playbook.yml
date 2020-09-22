@@ -1,0 +1,70 @@
+---
+# source: https://www.srijn.net/2020/06/install-docker-and-docker-compose-using-ansible/
+#         https://gist.github.com/srijan/2028af568459195cb9a3dae8d111e754
+
+# check: https://docs.ansible.com/ansible/latest/modules/docker_compose_module.html
+
+# Install docker and docker-compose using Ansible
+
+# Install dependencies:
+- name: Install packages using apt
+  apt:
+    name: 
+        - apt-transport-https
+        - ca-certificates
+        - curl
+        - gnupg2
+        - software-properties-common
+    state: present
+    update_cache: no
+
+# Add docker repository:
+- name: Add Docker GPG apt Key
+  apt_key:
+    url: "{{ docker_apt_gpg_key }}"
+    state: present
+
+- name: Add Docker Repository
+  apt_repository:
+    repo: "{{ docker_apt_repository }}"
+    state: present
+    update_cache: true
+
+# Install and enable Docker:
+- name: Update apt and install docker-ce
+  apt: update_cache=no name=docker-ce state=present
+
+# -----------------------------------------------------
+
+# Docker Compose Setup:
+
+# Check if docker-compose is installed and it’s version
+- name: Check current docker-compose version.
+  command: docker-compose --version
+  register: docker_compose_vsn
+  changed_when: false
+  failed_when: false
+  check_mode: no
+
+- set_fact:
+    docker_compose_current_version: "{{ docker_compose_vsn.stdout | regex_search('(\\d+(\\.\\d+)+)') }}"
+  when:
+    - docker_compose_vsn.stdout is defined
+
+# Install or upgrade docker-compose if required:
+- name: Install or upgrade docker-compose
+  get_url: 
+    url : "https://github.com/docker/compose/releases/download/{{ docker_compose_version }}/docker-compose-Linux-x86_64"
+    dest: /usr/local/bin/docker-compose
+    mode: 'a+x'
+    force: yes
+  when: >
+    docker_compose_current_version is not defined
+    or docker_compose_current_version is version(docker_compose_version, '<')
+- name: Run and enable docker
+  service:
+    name: docker
+    state: started
+    enabled: true
+
+# https://gist.github.com/srijan/2028af568459195cb9a3dae8d111e754
