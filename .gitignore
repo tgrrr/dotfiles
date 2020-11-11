@@ -10,3 +10,4 @@ app-preferences/Alfred.alfredpreferences/remote
 app-preferences/Workflow Data/com.neilrenicker.harvest/projects.json
 app-preferences/Alfred.alfredpreferences/workflows/user.workflow.*/**
 app-preferences/Workflow Data/com.neilrenicker.harvest/id.txt
+ansible-playbooks/wordpress-docker/.env

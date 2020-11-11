@@ -2,7 +2,8 @@
 # Paths:
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 PATH="/usr/local/bin:$(getconf PATH)"
-export PATH=${PATH}:/usr/local/sbin:/usr/local/bin/:/usr/local/opt/tcl-tk/bin:$PATH:/usr/local/lib/node_modules/npm/bin:
+export PATH=${PATH}:/usr/local/sbin:/usr/local/bin/:/usr/local/opt/tcl-tk/bin:$PATH:/usr/local/lib/node_modules/npm/bin:/Library/TeX/texbin
+# export PATH=“:$PATH”
 # export PATH="/usr/local/sbin:$PATH"
 # Add paths for Android, Tex, Anaconda
 
@@ -121,11 +122,11 @@ fi
 alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
 alias docs='code ~/code/apps/dotfiles/vscode\ workspaces/docs.code-workspace'
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+alias cpdir='pwd|pbcopy'
 alias gitlog="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 alias gitlogdetailed="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222"
-# alias cpdir='pwd|pbcopy'
-# alias rstudio='open -a Rstudio'
+alias rstudio='open -a Rstudio'
 
 aw() {
     cd /Applications/ActivityWatch.app/Contents/MacOS/

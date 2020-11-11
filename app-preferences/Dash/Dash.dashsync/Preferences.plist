@@ -83,10 +83,31 @@
 	<dict>
 		<key>installed</key>
 		<dict>
+			<key>TypeScript_Online</key>
+			<dict>
+				<key>date</key>
+				<date>2020-09-17T04:57:41Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>javascript</string>
+					</array>
+					<key>name</key>
+					<string>TypeScript (Online)</string>
+					<key>platform</key>
+					<string>soonline</string>
+					<key>uniqueIdentifier</key>
+					<string>TypeScript_Online</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>uninstalled</key>
+		<dict>
 			<key>JavaScript_Online</key>
 			<dict>
 				<key>date</key>
-				<date>2020-07-16T07:01:56Z</date>
+				<date>2020-09-26T15:50:40Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -105,7 +126,7 @@
 			<key>React_Online</key>
 			<dict>
 				<key>date</key>
-				<date>2020-06-06T13:08:04Z</date>
+				<date>2020-09-26T15:50:53Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -121,27 +142,7 @@
 					<string>React_Online</string>
 				</dict>
 			</dict>
-			<key>TypeScript_Online</key>
-			<dict>
-				<key>date</key>
-				<date>2020-07-16T07:01:25Z</date>
-				<key>entry</key>
-				<dict>
-					<key>aliases</key>
-					<array>
-						<string>javascript</string>
-					</array>
-					<key>name</key>
-					<string>TypeScript (Online)</string>
-					<key>platform</key>
-					<string>soonline</string>
-					<key>uniqueIdentifier</key>
-					<string>TypeScript_Online</string>
-				</dict>
-			</dict>
 		</dict>
-		<key>uninstalled</key>
-		<dict/>
 	</dict>
 	<key>DHUserRepo</key>
 	<dict>
@@ -264,7 +265,7 @@
 		</dict>
 	</dict>
 	<key>isPinned</key>
-	<false/>
+	<true/>
 	<key>menuIconBehavior</key>
 	<integer>1</integer>
 	<key>placeholderDelimiter</key>
@@ -375,7 +376,7 @@
 	<key>shouldSyncView</key>
 	<true/>
 	<key>showInDock</key>
-	<false/>
+	<true/>
 	<key>versionedDHCheatRepo</key>
 	<dict>
 		<key>installed</key>

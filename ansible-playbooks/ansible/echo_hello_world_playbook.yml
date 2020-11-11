@@ -1,0 +1,13 @@
+---
+- name: Hello World!
+  hosts: localhost
+
+  connection: local
+  tasks:
+    - name: Hello World!
+      shell: echo "Hi! Tower is working."
+
+    - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
+      copy:
+        content: hello worldn
+        dest: /tmp/testfile.txt

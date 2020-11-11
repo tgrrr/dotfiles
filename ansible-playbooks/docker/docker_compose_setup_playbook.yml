@@ -1,12 +1,5 @@
 ---
-# source: https://www.srijn.net/2020/06/install-docker-and-docker-compose-using-ansible/
-#         https://gist.github.com/srijan/2028af568459195cb9a3dae8d111e754
 
-# check: https://docs.ansible.com/ansible/latest/modules/docker_compose_module.html
-
-# Install docker and docker-compose using Ansible
-
-# Install dependencies:
 - hosts: all
   become: yes
   gather_facts: false
@@ -24,9 +17,13 @@
       update_cache: no
 
   # Add docker repository:
+  # $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  # check fingerprint:
+  # sudo apt-key fingerprint 0EBFCD88
   - name: Add Docker GPG apt Key
     apt_key:
-      url: "{{ docker_apt_gpg_key }}"
+      url: "https://download.docker.com/linux/ubuntu/gpg"
+      # url: "{{ docker_apt_gpg_key }}"
       state: present
 
   - name: Add Docker Repository
@@ -37,7 +34,10 @@
 
   # Install and enable Docker:
   - name: Update apt and install docker-ce
-    apt: update_cache=no name=docker-ce state=present
+    apt: 
+      name: docker-ce 
+      state: present
+      update_cache: no 
 
   # -----------------------------------------------------
 

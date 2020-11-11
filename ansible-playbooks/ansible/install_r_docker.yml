@@ -1,0 +1,21 @@
+WIP Docker file to install r, python, node
+
+From r-base:4.0.2
+RUN apt-get update && apt-get install -y python3 nodejs
+RUN cp /usr/bin/python3 /usr/bin/python
+
+
+---
+
+# See: https://hub.docker.com/_/r-base
+
+FROM r-base
+COPY . /usr/local/src/myscripts
+WORKDIR /usr/local/src/myscripts
+CMD ["Rscript", "myscript.R"]
+
+
+$ docker build -t myscript /path/to/Dockerfile
+
+https://www.infoworld.com/article/3541368/how-to-run-r-40-in-docker-and-3-cool-new-r-40-features.html
+docker run --rm -p 8787:8787 -v /Users/smachlis/Documents/MoreWithR:/home/rstudio/morewithr sharon000/my_rstudio_image:version1

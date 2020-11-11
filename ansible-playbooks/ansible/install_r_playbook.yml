@@ -1,0 +1,37 @@
+---
+- name: Install R and Jags packages
+  hosts: localhost
+  connection: local
+
+  tasks:
+    - name: Upgrade all apt packages
+      become: true
+      apt: upgrade=dist force_apt_get=yes
+    
+    - name: Add an apt key by id for R, will not download if present
+      become: true
+      apt_key:
+        keyserver: keyserver.ubuntu.com
+        id: E298A3A825C0D65DFD57CBB651716619E084DAB9
+
+    - name: Add r repo
+      become: true
+      repo: deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/
+      state: present
+
+    - name: install R
+      become: true
+      apt: 
+        name: apt-transport-https software-properties-common r-base build-essential -y
+
+      # - name: adding a few R packages
+      #   command: /usr/bin/Rscript --slave --no-save --no-restore-history -e "if (! ('{{item}}' %in% installed.packages()[,'Package'])) install.packages(pkgs={{item}}, repos=c('http://www.freestatistics.org/cran/'))"
+      #   with_items:
+      #         - name: ggplot2
+      #         - name: ggpubr
+      #         - name: here
+      #         - name: ks
+      #         - name: packrat
+      #         - name: rjags
+      #         - name: runjags
+      #         # - name: testthat

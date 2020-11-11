@@ -1,0 +1,11 @@
+---
+- import_playbook: docker.yml
+- import_playbook: install_nextcloud_playbook.yml
+
+# Master playbook for raspberry pi
+
+# TODO: 1. Install Docker and Docker Compose:
+# ansible-playbooks/docker/docker_compose_setup_playbook.yml
+
+# 2. 
+# ansible-playbooks/pihole/pihole-docker-compose.yml
