@@ -1,0 +1,18 @@
+yarn global v1.22.10
+info "@vue/cli@4.4.6" has binaries:
+   - vue
+info "create-react-app@3.4.0" has binaries:
+   - create-react-app
+info "lighthouse@5.6.0" has binaries:
+   - lighthouse
+   - chrome-debug
+info "purify-css@1.2.5" has binaries:
+   - purifycss
+info "serve@11.3.0" has binaries:
+   - serve
+info "typescript@3.9.2" has binaries:
+   - tsc
+   - tsserver
+info "webpack-cli@3.3.12" has binaries:
+   - webpack-cli
+Done in 58.82s.

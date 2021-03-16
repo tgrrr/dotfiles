@@ -1,0 +1,84 @@
+total 0
+drwxr-xr-x@  3 phil  staff   96 Nov 24 21:09 ActivityWatch.app
+drwxr-xr-x@  3 phil  admin   96 Dec 18  2019 Alfred 3.app
+drwxr-xr-x@  3 phil  admin   96 Feb  7 14:34 Anki.app
+drwxr-xr-x   3 root  wheel   96 Feb 19 03:59 Arq.app
+drwxr-xr-x   3 phil  staff   96 Jan 13 18:48 Atom.app
+drwxr-xr-x@  3 phil  admin   96 Aug 27  2020 Authy Desktop.app
+drwxr-xr-x@  3 phil  staff   96 Aug 30  2016 BitBar.app
+drwxr-xr-x   3 phil  staff   96 Mar 11 22:22 Bitwarden.app
+drwxr-xr-x@  3 root  wheel   96 Feb  1 16:14 Clockify Desktop.app
+drwxr-xr-x@  3 phil  staff   96 Dec  8 09:32 Cypress.app
+drwxr-xr-x   3 root  wheel   96 Nov 26 19:08 DaisyDisk.app
+drwxr-xr-x   3 phil  staff   96 Feb 12 17:52 Dash5.app
+drwxr-xr-x   3 phil  staff   96 Dec  4 01:35 Discord.app
+drwxr-xr-x   3 phil  admin   96 Feb 11 12:38 Docker.app
+drwxr-xr-x@  3 phil  admin   96 Mar  4 03:15 Downie 4.app
+drwxr-xr-x@  3 phil  staff   96 Aug 20  2019 Dozer.app
+drwxr-xr-x@  3 root  wheel   96 Mar  5 13:03 Dropover.app
+drwxr-xr-x@ 20 phil  staff  640 Jan 25  2020 EndNote X9
+drwxr-xr-x   3 phil  staff   96 Nov 10 01:22 Figma.app
+drwxr-xr-x@  3 phil  staff   96 Oct 20 23:58 FileZilla.app
+drwxr-xr-x@  3 phil  staff   96 Mar 16 11:41 Firefox.app
+drwxr-xr-x@  3 phil  admin   96 Dec 16 10:30 Freedom.app
+drwxr-xr-x   3 root  wheel   96 Jan  8  2020 GIPHY CAPTURE.app
+drwxrwxr-x@  3 phil  admin   96 Mar  5 16:56 Google Chrome.app
+drwxr-xr-x@  3 root  wheel   96 Jan 27 13:08 Horo.app
+drwxr-xr-x@  3 phil  staff   96 Dec 18  2019 Insomnia graphql.app
+drwxr-xr-x   3 root  wheel   96 Jan 30 00:15 Karabiner-Elements.app
+drwxr-xr-x   3 root  wheel   96 Jan 30 00:15 Karabiner-EventViewer.app
+drwxr-xr-x   3 root  wheel   96 Feb  9 13:40 KensingtonWorks .app
+drwxr-xr-x   3 root  wheel   96 Oct 23 06:47 Kindle.app
+drwxr-xr-x   3 phil  admin   96 Mar 16 10:22 Kite.app
+drwxr-xr-x   3 phil  admin   96 Oct 29 17:10 LastPass.app
+drwxr-xr-x@  3 phil  admin   96 May  6  2020 Lunar.app
+drwxr-xr-x   3 phil  admin   96 Oct 24 02:50 Mathpix Snipping Tool.app
+drwxrwxr-x   3 root  wheel   96 Feb 17 17:33 Microsoft Excel.app
+drwxr-xr-x@  3 root  wheel   96 Mar  9 08:29 Microsoft Remote Desktop.app
+drwxr-xr-x   3 root  wheel   96 Feb 17 17:33 Microsoft Teams.app
+drwxrwxr-x   3 root  wheel   96 Feb 17 17:33 Microsoft Word.app
+drwxr-xr-x@  3 phil  admin   96 Jan 15  2020 Mutify.app
+drwxr-xr-x   3 phil  staff   96 Feb  4  2020 Notion.app
+drwxr-xr-x   3 root  wheel   96 Mar  9 16:05 OneDrive.app
+drwxr-xr-x   4 root  wheel  128 Mar  1 19:59 OneDrive.localized
+drwxr-xr-x   3 root  wheel   96 Sep 30 12:53 PDF Printer Lite - Easily Print Document to PDF.app
+drwxr-xr-x@  3 root  wheel   96 Mar  5 13:02 Pasta.app
+drwxr-xr-x@  3 phil  staff   96 Jul 13  2020 Postman.app
+drwxr-xr-x   3 root  wheel   96 Sep 14  2020 R.app
+drwxr-xr-x   3 root  wheel   96 Dec 19  2019 Radio Silence.app
+drwxr-xr-x@  3 phil  admin   96 Dec 10 00:44 Raspberry Pi Imager.app
+drwxr-xr-x   3 root  wheel   96 Jul 31  2020 Remote Desktop - VNC.app
+drwxr-xr-x   3 root  wheel   96 Dec 30 17:40 RescueTime.app
+drwxr-xr-x@  3 phil  admin   96 Mar 22  2019 Robo 3T.app
+drwxr-xr-x@  3 root  wheel   96 Mar 10 03:21 Safari.app
+drwxr-xr-x   4 root  admin  128 Feb 19 16:29 Sdrive
+drwxr-xr-x@  3 phil  staff   96 Sep 12  2020 SelfControl.app
+drwxr-xr-x@  3 phil  admin   96 Apr  3  2016 Sequel Pro.app
+drwxr-xr-x@  3 phil  admin   96 Oct  1 19:34 Serene.app
+drwxr-xr-x   3 phil  staff   96 Feb 22 15:10 Signal.app
+drwxr-xr-x@  3 phil  staff   96 Sep 10  2018 Sketch.app
+drwxr-xr-x   3 root  wheel   96 Jul 13  2020 Skitch.app
+drwxr-xr-x   3 phil  staff   96 Feb 10 10:44 Slack.app
+drwxr-xr-x   3 root  wheel   96 Jan 10  2020 Smart JSON Editor.app
+drwxr-xr-x   3 phil  staff   96 Jul 13  2020 Sourcetree.app
+drwxr-xr-x@  3 phil  staff   96 Dec 23  2016 Spectacle.app
+drwxr-xr-x@  3 phil  staff   96 Dec 13 08:05 Syncplay.app
+drwxr-xr-x@  3 phil  admin   96 Mar 20  2020 Synergy.app
+drwxr-xr-x   3 root  wheel   96 Dec 16 21:02 TeamViewer.app
+drwxr-xr-x@  3 phil  staff   96 Feb  8  2019 The Unarchiver.app
+drwxr-xr-x@  3 phil  staff   96 Oct 26  2019 Transmit.app
+drwxr-xr-x@  3 phil  admin   96 Sep  3  2019 UberConference.app
+drwxr-xr-x@  3 phil  staff   96 Nov 12  2019 Uninstaller.app
+drwxr-xr-x   7 root  wheel  224 Feb 18 08:17 Utilities
+drwxr-xr-x@  3 phil  staff   96 Jul 28  2020 VLC.app
+drwxr-xr-x   3 root  admin   96 Mar 10 20:45 VirtualBox.app
+drwxr-xr-x@  3 phil  admin   96 Mar 11 16:02 Visual Studio Code.app
+drwxr-xr-x@  3 phil  admin   96 Mar  8 07:28 Webex.app
+drwxr-xr-x@  3 root  wheel   96 Feb 24 12:25 WireGuard.app
+drwxr-xr-x@  3 phil  admin   96 Dec 13  2019 balenaEtcher.app
+drwxr-xr-x@  3 root  wheel   96 Mar 12 12:58 iA Writer.app
+drwxr-xr-x   3 phil  staff   96 Feb 24 00:49 iTerm.app
+drwxrwxrwx   3 phil  owner   96 Oct 21 22:13 krisp.app
+drwxr-xr-x   3 root  admin   96 Feb 24 12:09 nextcloud.app
+drwxr-xr-x@  3 phil  staff   96 Jan 19 11:38 qBittorrent.app
+drwxr-xr-x   3 phil  wheel   96 Mar 10 20:48 zoom.us.app
