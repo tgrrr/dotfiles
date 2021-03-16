@@ -1,5 +1,30 @@
 # DOTFILE TODO
 
+symlink .zshrc file
+
+ln -s  /Users/Shared/code/apps/dotfiles/.zshrc ~/.zshrc
+
+Install Rust and Cargo:
+  curl https://sh.rustup.rs -sSf | sh
+
+set default branch to main:
+$ git config --global init.defaultBranch main
+
+- gpg keychain suite GPG Keychain https://gpgtools.org/ for encrypted files. Removed because of annoying update notification
+
+brew dvc # for data version control
+# switch off tracking: https://dvc.org/doc/user-guide/analytics
+dvc config core.analytics false --global
+dvc config core.analytics false --system
+
+script for selfcontrol
+sudo /Applications/SelfControl.app/Contents/MacOS/org.eyebeam.SelfControl $(id -u $(whoami)) --is-running
+2020-05-20 11:39:08.037 org.eyebeam.SelfControl[1806:3220904] NO
+
+stop chrome from reloading tabs automatically: chrome://flags/#automatic-tab-discarding
+
+Fix git autocomplete: brew install git --without-completions
+
 ## Deathlist5:
 ☐ tig
 ☐ move .zshrc to it's own custom file in dotfiles: 

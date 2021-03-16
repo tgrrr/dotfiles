@@ -1,12 +1,15 @@
+*.
+Icon[\r]
+**/InfoPlist.strings
+*.env
+
+app-preferences/Alfred.alfredpreferences/remote
+app-preferences/Alfred.alfredpreferences/workflows/user.workflow.*/**
+app-preferences/Workflow Data/com.neilrenicker.harvest/id.txt
+app-preferences/Workflow Data/com.neilrenicker.harvest/projects.json
+
 Brewfile.lock.json
 PRIVATE-mac-backups-and-harddrives--todo.todo
 app-preferences/bitbar/node_modules
 emojiWeather.30m.js
 rescuetime.1h.py
-*.
-Icon[\r]
-app-preferences/Alfred.alfredpreferences/remote
-**/InfoPlist.strings
-app-preferences/Workflow Data/com.neilrenicker.harvest/projects.json
-app-preferences/Alfred.alfredpreferences/workflows/user.workflow.*/**
-app-preferences/Workflow Data/com.neilrenicker.harvest/id.txt

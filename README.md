@@ -6,36 +6,29 @@ This repository serves as my way to help me setup and maintain my Mac. It takes 
 
 First, go through the checklist below to make sure you didn't forget anything before you wipe your hard drive.
 
-- Did you commit and push any changes/branches to your **git repositories**?
-  - __Check all branches__
-  - Check any wordpress stuff in www, etc
-- NEW: Recursively remove `node_modules` folders to free up space (if making a copy of files separate to git repo's)
+- [ ] Did you commit and push any changes/branches to your **git repositories**?
+  - [ ] __Check all branches__
+  - [ ] Check any php stuff in www folders
+- [ ] Recursively remove `node_modules` folders to free up space (if making a copy of files separate to git repo's)
 
+- [ ] Alfred settings (not in MackUp)  
+- [ ] Radio Silence (screenshot)
+- [ ] Oh my zsh config
+- [ ] one-tab export tabs
+- [ ] Check 2fa
+- [ ] upate zsh file
+
+- [ ] Generate a list of all of your existing applications and packages:
 
 ```zsh
-cd ~/code
-find . -type d -name node_modules -exec rmdir {} \;
+sh ./bumpout.sh
 ```
 
-- NEW: Free up space with DaisyDisk when backing up
-- NEW: check:
-  - [ ] Docker `docker ps -a`
-  - [ ] Node global `npm list -g --depth=0`
-  - [ ] Yarn Global `yarn global list` OR `~/.config/yarn/global`
-  - [ ] brew ls `brew ls`
-  - [ ] Atom packages `apm ls`
-    - [ ] Atom Settings - MackUp
-  - [ ] VS Code packages `code --list-extensions | xargs -L 1 echo code --install-extension`
-    - [ ] VSCode settings - MackUp
-  - [ ] Alfred settings (not in MackUp)  
-  - [ ] Radio Silence (screenshot)
-  - [ ] Oh my zsh config - mackup?
-
-- Did you remember to save all important **documents** from non-iCloud directories?
-- Did you save all of your work from **apps which aren't synced through iCloud**?
-- Did you remember to export important data from your **local database**?
-- Did you update [mackup](https://github.com/lra/mackup) to the latest version and ran `mackup backup`?
-  - **NOTE: I've synced mackup to iCloud**
+- [ ] Did you remember to save all important **documents** from non-iCloud directories?
+- [ ] Did you save all of your work from **apps which aren't synced through iCloud**?
+- [ ] Did you remember to export important data from your **local database**?
+- [ ] Did you update [mackup](https://github.com/lra/mackup) to the latest version and ran `mackup backup`?
+<!-- - **NOTE: I've synced mackup to iCloud** -->
 
 ## Install macOS cleanly
 
@@ -59,6 +52,12 @@ If you did all of the above you may now follow these install instructions to set
 10. Restart your computer to finalize the process. Your Mac is now ready to use!
 
 > Note: you can use a different location than `~/.dotfiles` if you want. Just make sure you also update the reference in the [`.zshrc`](./.zshrc) file.
+
+> Note: I like to keep my `~/.zshrc` file in the dotfile. Here's how to symlink it:
+
+```zsh
+ln -s  ~/dotfiles/.zshrc ~/.zshrc
+```
 
 ## Steps after running dotfile
 
@@ -94,7 +93,29 @@ If you did all of the above you may now follow these install instructions to set
   - slack - also in app
 - Check Apps allowed in Users & Groups. Eg. Spectacle
 
+## Regular Maintainence
+
+- [ ] Free up space with DaisyDisk when backing up
+
+- Remove node_modules folders from inactive projects
+
+```zsh
+cd ~/code
+find . -type d -name node_modules -exec rmdir {} \;
+```
+
+- [ ] Run the update script
+
+## Bump out: Export Current Installed Apps
+
+For: Mac Apps, Docker, Node global, Yarn Global, VS Code packages, Atom packages
+
+```zsh
+sh ./bumpout.sh
+```
+
 ---
 
 - [How to create your own dotfiles + credits](./YOUR-OWN-DOTFILE.md)
 - Thanks to driesvints, the [original creator of this dotfile](https://github.com/driesvints/dotfiles)
+
